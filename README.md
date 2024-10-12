@@ -44,6 +44,7 @@ O objetivo do sistema é otimizar o uso de água e nutrientes, ajustando automat
   - **AJU_QUANTIDADE_NUTRIENTES:** Quantidade de nutrientes aplicados no ajuste (string para representar NPK).
 
 ### Relacionamentos
+
 **LEITURA_SENSOR**
   - **SENSOR (1) --- (N) LEITURA_SENSOR:** Um sensor pode ter várias leituras, mas cada leitura é feita por um único sensor.
   - **CULTURA (1) --- (N) LEITURA_SENSOR:** Uma cultura pode ter várias leituras, mas cada leitura está relacionada a uma única cultura.
