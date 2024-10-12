@@ -43,7 +43,7 @@ O objetivo do sistema é otimizar o uso de água e nutrientes, ajustando automat
   - **AJU_QUANTIDADE_AGUA:** Quantidade de água aplicada no ajuste.
   - **AJU_QUANTIDADE_NUTRIENTES:** Quantidade de nutrientes aplicados no ajuste (string para representar NPK).
 
-## Relacionamentos
+### Relacionamentos
 **LEITURA_SENSOR**
   - **SENSOR (1) --- (N) LEITURA_SENSOR:** Um sensor pode ter várias leituras, mas cada leitura é feita por um único sensor.
   - **CULTURA (1) --- (N) LEITURA_SENSOR:** Uma cultura pode ter várias leituras, mas cada leitura está relacionada a uma única cultura.
@@ -68,12 +68,13 @@ O objetivo do sistema é otimizar o uso de água e nutrientes, ajustando automat
 
 ### Requisitos:
 
-1. **Visual Studio Code (VSCode)**: Editor de código para escrever o código SQL e de integração com o banco de dados.
-2. **Oracle Database**: Base de dados para armazenamento das informações.
-3. **Oracle SQL Developer** ou outro cliente para interagir com o Oracle Database.
+1. **Autonomous Transactional Oracle Database** como banco de dados transacional.
 
 ### Configuração do Banco de Dados Oracle:
 
-1. Instale o Oracle Database localmente ou use uma instância em nuvem.
-2. Conecte-se ao banco de dados usando o Oracle SQL Developer ou outro cliente.
-3. Crie as tabelas necessárias usando os scripts
+1. Configurar conta Free Tier em https://www.oracle.com/cloud/free/
+2. Provisionar **Autonomous Transactional Oracle Database**
+3. Abrir SQL Console
+4. Executar o script SQL_SCRIP_CAP1_FIAP.sql
+
+Caso queira ajustar/testar o script SQL_SCRIP_CAP1_FIAP.sql, foi gerado o script DROP_ALL.sql que derruba todas as tabelas, dados e views.
